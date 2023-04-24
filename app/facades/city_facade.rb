@@ -5,6 +5,8 @@ class CityFacade
 
   def city_data
     data = TeleportService.salary_data(@city)
-    require 'pry'; binding.pry
+    salaries = data[:salaries].map do |salary|
+      Salary.new(salary)
+    end
   end
 end

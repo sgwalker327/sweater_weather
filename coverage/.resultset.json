@@ -218,6 +218,8 @@
           1,
           1,
           1,
+          1,
+          null,
           null,
           null
         ]
@@ -240,8 +242,25 @@
           null,
           null
         ]
+      },
+      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/poros/salary.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1682355423
+    "timestamp": 1682357812
   }
 }

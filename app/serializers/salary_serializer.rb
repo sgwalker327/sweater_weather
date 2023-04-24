@@ -1,4 +1,4 @@
 class SalarySerializer
   include JSONAPI::Serializer
-  attribute 
+  attributes :title, :min, :max
 end

@@ -15,7 +15,6 @@ class WeatherService
   def self.conn
     Faraday.new(url: "https://api.weatherapi.com/") do |f|
       f.params['key'] = ENV['WEATHER_API_KEY']
-      # f.params['q'] = @location
     end
   end
 end

@@ -1,10 +1,7 @@
 class WeatherService
-  def initialize(location)
-    @location = location
-  end
   
-  def self.get_weather(location)
-    get_url("/v1/forecast.json?query=#{location}")
+  def self.weather(lat, long)
+    get_url("/v1/forecast.json?q=#{lat},#{long}")
   end
 
   def self.get_url(url)
@@ -15,7 +12,6 @@ class WeatherService
   def self.conn
     Faraday.new(url: "https://api.weatherapi.com/") do |f|
       f.params['key'] = ENV['WEATHER_API_KEY']
-      # f.params['q'] = @location
     end
   end
 end

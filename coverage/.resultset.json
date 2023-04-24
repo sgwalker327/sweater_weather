@@ -187,32 +187,28 @@
           null
         ]
       },
-      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/services/weather_service.rb": {
+      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/services/geocode_service.rb": {
         "lines": [
           1,
           1,
-          0,
-          null,
-          null,
-          1,
           1,
           null,
           null,
           1,
           1,
           1,
+          1,
           null,
           null,
           1,
           1,
           1,
-          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1682349636
+    "timestamp": 1682350536
   }
 }

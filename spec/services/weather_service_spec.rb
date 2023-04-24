@@ -6,7 +6,7 @@ RSpec.describe WeatherService do
       it 'returns weather data for a location' do
 
         weather = WeatherService.get_weather('Denver, CO')
-        require 'pry'; binding.pry
+       
         expect(weather).to be_a(Hash)
       end
     end

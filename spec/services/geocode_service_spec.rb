@@ -6,7 +6,7 @@ RSpec.describe GeocodeService do
       it 'returns coordinate data for a location' do
 
         location = GeocodeService.get_coordinates('Denver,CO')
-       require 'pry'; binding.pry
+        
         expect(location).to be_a(Hash)
       end
     end

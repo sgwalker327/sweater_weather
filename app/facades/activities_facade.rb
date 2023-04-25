@@ -6,7 +6,7 @@ class ActivitiesFacade
     destination = "#{weather[:location][:name]}, #{weather[:location][:region]}"
     forecast = {
       summary: weather[:current][:condition][:text],
-      temperature: weather[:current][:temp_f]
+      temperature: "#{weather[:current][:temp_f].to_i} F"
     }
     activity_1 = ActivitiesService.get_activities('relaxation')
     activity_2 = (

@@ -20,12 +20,13 @@ class ActivitiesFacade
     )
     activities = [activity_1, activity_2]
     hashed = activities.map do |activity|
-                [:activity] {
+               { activity[:activity] => {
                   type: activity[:type],
                   participants: activity[:participants],
                   price: activity[:price]
                 }
+              }
               end
-    require 'pry'; binding.pry
+    
   end
 end

@@ -5,7 +5,6 @@ class ForecastFacade
   def get_forecast(location)
     coords = LocationService.get_coordinates(location)
     weather = WeatherService.weather(coords[:lat], coords[:long])
-    
     current_weather = {
       last_updated: weather[:current][:last_updated],
       temperature: weather[:current][:temp_f],

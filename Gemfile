@@ -31,6 +31,7 @@ gem "jsonapi-serializer"
 gem "bootsnap", require: false
 gem "figaro"
 gem "faraday"
+gem "bcrypt"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -47,6 +48,7 @@ group :development, :test do
   gem "factory_bot_rails", '~> 6.2.0'
   gem "faker"
   gem "webmock"
+  gem "shoulda-matchers"
 end
 
 group :development do

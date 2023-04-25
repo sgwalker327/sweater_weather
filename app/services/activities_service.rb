@@ -10,6 +10,5 @@ class ActivitiesService
 
   def self.conn
     Faraday.new(url: "http://www.boredapi.com/api/activity/")
-    end
   end
 end

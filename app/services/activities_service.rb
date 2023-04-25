@@ -1,6 +1,6 @@
 class ActivitiesService
-  def self.get_activities
-    get_url("")
+  def self.get_activities(type)
+    get_url("?type=#{type}")
   end
 
   def self.get_url(url)

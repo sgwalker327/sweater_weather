@@ -1,6 +1,10 @@
 class LocationService
   def self.get_coordinates(location)
-    get_url("/geocoding/v1/address?location=#{location}")
+    x = get_url("/geocoding/v1/address?location=#{location}")
+    {
+      lat: x[:results][0][:locations][0][:latLng][:lat],
+      long: x[:results][0][:locations][0][:latLng][:lng]
+    }
   end
 
   def self.get_url(url)

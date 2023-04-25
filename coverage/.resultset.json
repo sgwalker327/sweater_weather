@@ -192,82 +192,69 @@
           null
         ]
       },
+      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/facades/forecast_facade.rb": {
         "lines": [
           1,
-          1,
-          null,
-          1,
-          2,
-          2,
-          2,
-          2,
-          null,
-          2,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          2,
-          null,
-          2,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          2,
-          null,
-          48,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/spec/requests/api/v1/forecast/index_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/spec/services/location_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
           null,
           1,
           null,
           1,
           1,
+          1,
           null,
           null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          5,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          24,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           null,
           null
         ]
@@ -276,37 +263,21 @@
         "lines": [
           1,
           1,
-          4,
-          null,
-          null,
-          1,
-          4,
-          4,
-          null,
-          null,
-          1,
-          4,
-          4,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/spec/services/weather_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           null,
           1,
           null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -317,17 +288,18 @@
           1,
           null,
           1,
-          3,
+          1,
           null,
           null,
           1,
-          3,
-          3,
+          1,
+          1,
           null,
           null,
           1,
-          3,
-          3,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -341,27 +313,10 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
-        "lines": [
-          1,
           1,
           1,
           1,
           null,
-          null,
-          null
-        ]
-      },
-      "/Users/samwalker/Documents/Turing/3mod/projects/sweater_weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -376,6 +331,6 @@
         ]
       }
     },
-    "timestamp": 1682378322
+    "timestamp": 1682385182
   }
 }

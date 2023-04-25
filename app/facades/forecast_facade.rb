@@ -3,11 +3,9 @@ require 'date'
 class ForecastFacade
 
   def get_forecast(location)
-    city = LocationService.get_coordinates(location)
-    lat = city[:results][0][:locations][0][:latLng][:lat]
-    long = city[:results][0][:locations][0][:latLng][:lng]
-    weather = WeatherService.weather(lat, long)
-
+    coords = LocationService.get_coordinates(location)
+    weather = WeatherService.weather(coords[:lat], coords[:long])
+    
     current_weather = {
       last_updated: weather[:current][:last_updated],
       temperature: weather[:current][:temp_f],
@@ -19,7 +17,7 @@ class ForecastFacade
       icon: weather[:current][:condition][:icon]
     }
 
-    daily_weather = weather[:forecast][:forecastday][0..4].map do |day|
+    daily_weather = weather[:forecast][:forecastday].map do |day|
       {
         date: day[:date],
         sunrise: day[:astro][:sunrise],

@@ -18,7 +18,6 @@ RSpec.describe 'Sessions new request' do
     expect(data).to be_a(Hash)
     expect(data[:data].keys).to eq([:id, :type, :attributes])
     expect(data[:data][:attributes].keys).to eq([:email, :api_key])
-    expect(data[:data][:attributes].keys).to not_include([:password_digest])
-    require 'pry'; binding.pry
+    expect(data[:data][:attributes].keys).not_to include([:password_digest])
   end
 end

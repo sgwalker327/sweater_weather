@@ -1,7 +1,6 @@
 require 'date'
 
 class ForecastFacade
-
   def get_forecast(location)
     coords = LocationService.get_coordinates(location)
     weather = WeatherService.weather(coords[:lat], coords[:long])

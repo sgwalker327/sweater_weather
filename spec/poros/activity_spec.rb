@@ -8,7 +8,7 @@ RSpec.describe Activity do
     activity = Activity.new(destination, forecast, activities)
     
     expect(activity).to be_an_instance_of(Activity)
-    expect(activity.destination).to eq("Denver, Colorado")
+    expect(activity.destination).to eq(destination)
     expect(activity.activities).to be_a(Hash)
     expect(activity.activities.first[1].keys).to eq([:type, :participants, :price])
     expect(activity.forecast).to be_a(Hash)

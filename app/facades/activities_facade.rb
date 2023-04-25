@@ -18,8 +18,8 @@ class ActivitiesFacade
         ActivitiesService.get_activities('cooking')
       end
     )
-    activities = [activity_1, activity_2]
-    hashed = activities.map do |activity|
+    pre_hashed = [activity_1, activity_2]
+    activities = pre_hashed.map do |activity|
                { activity[:activity] => {
                   type: activity[:type],
                   participants: activity[:participants],
@@ -27,6 +27,6 @@ class ActivitiesFacade
                 }
               }
               end
-    
+    Activity.new(destination, forecast, activities)
   end
 end

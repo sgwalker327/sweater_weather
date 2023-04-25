@@ -22,23 +22,15 @@ class ActivitiesFacade
       type: activity_1[:type],
       participants: activity_1[:participants],
       price: activity_1[:price]
+     }
     }
-  }
-  hash_act_2 = { activity_2[:activity] => {
-    type: activity_2[:type],
-    participants: activity_2[:participants],
-    price: activity_2[:price]
-  } }
-  activities = hash_act_1.merge(hash_act_2)
-    # pre_hashed = [activity_1, activity_2]
-    # activities = pre_hashed.flat_map do |activity|
-    #            { activity[:activity] => {
-    #               type: activity[:type],
-    #               participants: activity[:participants],
-    #               price: activity[:price]
-    #             }
-    #           }
-    #           end.flatten
+    hash_act_2 = { activity_2[:activity] => {
+      type: activity_2[:type],
+      participants: activity_2[:participants],
+      price: activity_2[:price]
+      }
+    }
+    activities = hash_act_1.merge(hash_act_2)
     Activity.new(destination, forecast, activities)
   end
 end

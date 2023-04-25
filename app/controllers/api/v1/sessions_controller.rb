@@ -1,5 +1,5 @@
-class Api::V1::SessionsController
-  def login
-    
+class Api::V1::SessionsController < ApplicationController
+  def new
+
   end
 end

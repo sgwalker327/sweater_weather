@@ -1,4 +1,5 @@
 class Api::V1::ForecastController < ApplicationController
+  
   def index
     if params[:location].present?
       weather = ForecastFacade.new.get_forecast(params[:location])

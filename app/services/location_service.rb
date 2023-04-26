@@ -7,6 +7,12 @@ class LocationService
     }
   end
 
+  def self.road_trip_data(origin, destination)
+    x = get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
+  end
+
+  private
+
   def self.get_url(url)
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)

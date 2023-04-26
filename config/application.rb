@@ -22,6 +22,7 @@ module SweaterWeather
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+    config.action_controller.include_all_helpers = true
     config.factory_bot.definition_file_paths = ["custom/factories"]
     # Configuration for the application, engines, and railties goes here.
     #

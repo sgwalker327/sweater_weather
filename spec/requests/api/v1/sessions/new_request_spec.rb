@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Sessions new request' do
-  it 'returns a user\'s api key and email' do
+  it 'returns a user\'s api key and email', :vcr do
     @create = { email: "stan@stan.com", 
       password: "password",
       password_confirmation: "password"}
@@ -18,6 +18,6 @@ RSpec.describe 'Sessions new request' do
     expect(data).to be_a(Hash)
     expect(data[:data].keys).to eq([:id, :type, :attributes])
     expect(data[:data][:attributes].keys).to eq([:email, :api_key])
-    expect(data[:data][:attributes].keys).not_to include([:password_digest])
+    expect(data[:data][:attributes].keys).to_not include([:password_digest])
   end
 end

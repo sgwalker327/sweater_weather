@@ -7,6 +7,13 @@ class LocationService
     }
   end
 
+  def self.get_time(origin, destination)
+    x = get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
+    x[:route][:time]
+  end
+
+  private
+
   def self.get_url(url)
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)

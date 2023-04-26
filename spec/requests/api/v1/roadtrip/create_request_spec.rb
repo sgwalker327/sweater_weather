@@ -2,7 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'Roadtrip create request' do
   it 'returns a roadtrip object with necessary data' do
-    post '/api/v1/road_trip'
+    locations = { origin: 'denver, co', destination: 'vail, co' }
+
+    post '/api/v1/road_trip', params: locations
     require 'pry'; binding.pry
   end
 end

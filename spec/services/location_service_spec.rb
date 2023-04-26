@@ -10,5 +10,13 @@ RSpec.describe LocationService do
         expect(location.keys).to include(:lat, :long)
       end
     end
+
+    context '.get_time' do
+      it 'returns time data for a trip' do
+        time = LocationService.get_time('Denver,CO', 'Vail,CO')
+        
+        expect(time).to be_a(Integer)
+      end
+    end
   end
 end

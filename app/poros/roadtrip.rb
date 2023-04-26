@@ -19,12 +19,13 @@ class Roadtrip
    formatted_time = rounded_time.strftime('%Y-%m-%d %H:%M')
    date_string = rounded_time.strftime('%Y-%m-%d')
    
-  # eta_weather = {}
+  eta_weather = []
     current_weather[:forecast][:forecastday].map do |day|
       if day[:date] == date_string
         day[:hour].find do |hour|
           if hour[:time] == formatted_time
-            eta_weather = {
+            eta_weather << {
+              datetime: hour[:time],
               temperature: hour[:temp_f],
               conditions: hour[:condition][:text]
             }
@@ -32,5 +33,6 @@ class Roadtrip
         end
       end
     end
+   eta_weather.first
   end
 end

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Sessions new request' do
-  it 'returns a user\'s api key and email' do
+  it 'returns a user\'s api key and email', :vcr do
     @create = { email: "stan@stan.com", 
       password: "password",
       password_confirmation: "password"}

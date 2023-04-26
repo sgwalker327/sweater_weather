@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Forecast index spec' do
-  it 'returns weather data for a location' do
+  it 'returns weather data for a location', :vcr do
     location = 'denver,co'
     get "/api/v1/forecast?location=#{location}"
     
@@ -24,7 +24,7 @@ RSpec.describe 'Forecast index spec' do
     expect(parsed_data[:data][:attributes][:hourly_weather][0].keys).to_not include(:temp_c, :is_day, :wind_mph, :wind_kph, :wind_degree, :wind_dir, :pressure_mb, :pressure_in, :precip_mm, :precip_in, :humidity, :cloud, :feelslike_c, :feelslike_f, :windchill_c, :windchill_f, :heatindex_c, :heatindex_f, :dewpoint_c, :dewpoint_f, :will_it_rain, :chance_of_rain, :will_it_snow, :chance_of_snow, :vis_km, :gust_mph, :gust_kph, :uv)
   end
 
-  it 'returns an error when no location present' do
+  it 'returns an error when no location present', :vcr do
     location = ''
     get "/api/v1/forecast?location=#{location}"
 

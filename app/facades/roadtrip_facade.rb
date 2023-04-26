@@ -1,7 +1,6 @@
 class RoadtripFacade
   def road_trip(origin, destination)
     route_data = LocationService.road_trip_data(origin, destination)
-
       if route_data[:info][:statuscode] == 402
         data = {
           start_city: origin,

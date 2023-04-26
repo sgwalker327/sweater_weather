@@ -7,9 +7,8 @@ class LocationService
     }
   end
 
-  def self.get_time(origin, destination)
+  def self.road_trip_data(origin, destination)
     x = get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
-    x[:route][:time]
   end
 
   private

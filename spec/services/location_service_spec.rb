@@ -13,9 +13,9 @@ RSpec.describe LocationService do
 
     context '.get_time' do
       it 'returns time data for a trip' do
-        time = LocationService.get_time('Denver,CO', 'Vail,CO')
-        
-        expect(time).to be_a(Integer)
+        data = LocationService.road_trip_data('Denver,CO', 'Vail, CO')
+        require 'pry'; binding.pry
+        expect(time).to be_a(Hash)
       end
     end
   end
